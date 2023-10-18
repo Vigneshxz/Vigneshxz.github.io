@@ -3,7 +3,8 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 } 
 h1 {
-  color: [pick a font color]; text-align: center;
+  color: burlywood;
+  text-align: center;
 }
 .assign {
   display: flex;
