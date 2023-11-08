@@ -19,7 +19,7 @@ a{
 .assign img {
   width: 200px; 
   padding: 10px;
-  padding: 10px; /* change this from margin to padding */
+  padding: 5px; /* change this from margin to padding */
   border: 2px solid midnightblue; /* try dashed, dotted */
 }
 
