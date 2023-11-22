@@ -11,7 +11,7 @@ h1 {
   display:block;
 }
 h1:hover {
-color: blue; 
+color: DeepSkyBlue ; 
 text-align: 
 center; 
 width: 100%; 
@@ -24,7 +24,7 @@ display: block;
   margin: 10px;
   border-radius: 20px;
   width: 20%;
-  box-shadow: 8px 8px brown;
+  box-shadow: 8px 8px blue;
 }
 a{
   text-decoration: none; /* remove underlining on anchor tags */
@@ -39,6 +39,6 @@ a{
 .assign img:hover {
 width: 200px;
 margin: 10px;
-border: 2px dotted yellow;
+border: 2px dotted BlueViolet ;
 }
 
