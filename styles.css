@@ -1,16 +1,30 @@
 body {
   background: skyblue;
   font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-wrap: wrap;
 } 
 h1 {
   color: black;
   text-align: center;
+  width: 100%;
+  display:block;
+}
+h1:hover {
+color: hotpink; 
+text-align: 
+center; 
+width: 100%; 
+display: block;
 }
 .assign {
   background: lightblue;
-  display: flex;
+  display: block;
   padding: 10px;
   margin: 10px;
+  border-radius: 20px;
+  width: 20%;
+  box-shadow: 8px 8px brown;
 }
 a{
   text-decoration: none; /* remove underlining on anchor tags */
@@ -21,5 +35,10 @@ a{
   padding: 10px;
   padding: 5px; /* change this from margin to padding */
   border: 2px solid midnightblue; /* try dashed, dotted */
+}
+.assign img:hover {
+width: 200px;
+margin: 10px;
+border: 2px dotted yellow;
 }
 
