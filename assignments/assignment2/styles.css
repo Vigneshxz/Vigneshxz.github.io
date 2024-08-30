@@ -1,0 +1,90 @@
+/* Apply a background image and font to the body */
+body {
+    background-image: url('images/background.jpeg');
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the header */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Style the navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Style the content div */
+.content {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+/* Style the images */
+img.responsive {
+    max-width: 100%; /* Keeps image responsive */
+    height: 200px; /* Set a consistent height */
+    width: 300px; /* Set a consistent width */
+    object-fit: cover; /* Maintain aspect ratio, filling the space */
+    border: 5px solid #4CAF50;
+    margin: 10px 0;
+}
+
+/* Style the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #4CAF50;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+thead {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #ddd;
+}
