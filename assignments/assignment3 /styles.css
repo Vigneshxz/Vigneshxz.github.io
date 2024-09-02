@@ -1,4 +1,4 @@
-/* Existing styles */
+
 body {
     background-color: lightyellow;
     font-family: Arial, sans-serif;
@@ -8,8 +8,8 @@ body {
 
 header h1 {
     text-align: center;
-    padding: 0; /* Remove padding */
-    margin: 0;  /* Remove margin */
+    padding: 0;
+    margin: 0;  
 }
 
 nav ul {
@@ -33,12 +33,12 @@ nav ul li a {
     padding: 10px;
 }
 
-/* New table styling */
+
 .table-container {
     width: 100%;
     margin: 0;
     padding: 0;
-    height: 30px; /* Adjust height as needed */
+    height: 30px; /* Adjust height */
     overflow: hidden; /* Ensure content doesn’t overflow */
     margin-bottom: 20px; /* Add space between table-container and main-content */
 }
@@ -111,39 +111,39 @@ footer {
     align-items: flex-start; /* Align to the left side */
     margin-bottom: 20px;
     width: 90%; /* Adjust width to push closer to margin */
-    max-width: 1200px; /* Optional: Limit maximum width */
-    margin-left: auto; /* Center the section horizontally */
-    margin-right: auto; /* Center the section horizontally */
+    max-width: 1200px; 
+    margin-left: auto; 
+    margin-right: auto; 
 }
 
 .idea-box {
     display: flex; /* Align items side by side */
     align-items: center; /* Center items vertically */
     background-color: lightyellow;
-    width: 200px; /* Set width to 200px */
+    width: 200px; 
     padding: 10px;
     margin-bottom: 10px;
-    box-sizing: border-box; /* Ensure padding is included in width */
+    box-sizing: border-box; 
 }
 
 .idea-box img {
-    width: 200px; /* Set image width to 200px */
-    height: 200px; /* Set image height to 200px */
-    object-fit: cover; /* Ensure image fits the box */
-    margin-right: 10px; /* Add space between image and text */
+    width: 200px; 
+    height: 200px; 
+    object-fit: cover; 
+    margin-right: 10px; 
 }
 
 .idea-box .idea-text {
     display: flex;
-    flex-direction: column; /* Stack text elements vertically */
+    flex-direction: column;
 }
 
 .idea-box h3 {
-    margin: 0; /* Remove default margin */
+    margin: 0; 
 }
 
 .idea-box p {
-    margin: 0; /* Remove default margin */
+    margin: 0; 
 }
 
 .footer-text {
@@ -175,25 +175,25 @@ footer {
     }
 
     .big-idea {
-        align-items: center; /* Center align on smaller screens */
-        width: 100%; /* Full width on smaller screens */
-        margin-left: 0; /* Reset margin on smaller screens */
-        margin-right: 0; /* Reset margin on smaller screens */
+        align-items: center; 
+        width: 100%;
+        margin-left: 0; 
+        margin-right: 0; 
     }
 
     .idea-box {
         width: 100%;
-        flex-direction: column; /* Stack image and text vertically on smaller screens */
-        align-items: center; /* Center align on smaller screens */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .idea-box img {
-        width: 100%; /* Ensure image is full width on smaller screens */
-        height: auto; /* Adjust height to maintain aspect ratio */
-        margin-right: 0; /* Remove margin on smaller screens */
+        width: 100%; 
+        height: auto; 
+        margin-right: 0; 
     }
 
     .idea-box .idea-text {
-        text-align: center; /* Center text on smaller screens */
+        text-align: center; 
     }
 }
