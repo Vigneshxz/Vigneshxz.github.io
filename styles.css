@@ -66,3 +66,8 @@ ul li {
 .small-logo:hover {
     opacity: 1;
 }
+iframe{
+    margin: auto;
+    display: block;
+    text-align: center;
+}
