@@ -1,0 +1,132 @@
+/* Reusing main page CSS for the header and nav sections */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('your-background-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: black;
+    text-align: center;
+}
+
+header {
+    position: relative;
+    padding: 20px;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.sign-in {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+h1 {
+    font-size: 48px;
+    margin-top: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: Black;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Comment Section Specific Styles */
+.comment-section {
+    margin: 50px auto;
+    max-width: 60%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    text-align: left;
+}
+
+.comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+#submit-comment {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#submit-comment:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+#comment-box {
+    margin-top: 30px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    max-height: 300px;
+    overflow-y: scroll;
+}
+
+.comment {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.comment h4 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.comment p {
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.comment .timestamp {
+    font-size: 12px;
+    color: #888;
+}
+

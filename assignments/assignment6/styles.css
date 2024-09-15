@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: lightyellow;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    color: rgb(58, 192, 158);
+}
+header h2 {
+    color: rgb(233, 104, 104);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 130px; /* Increase gap to create more space between columns */
+}
+
+.column {
+    flex: 1;
+    min-width: calc(30% - 40px); /* Reduce the column width to 30% with the adjusted gap */
+    box-sizing: border-box;
+    padding: 30px;
+    border-radius: 5px;
+    position: relative;
+    min-height: 600px;
+    text-align: center;
+    border: 1px solid rgb(58, 192, 158);
+}
+
+/* Assign different background colors for each column */
+#countColumn {
+    background-color: rgb(26, 119, 134);
+    color: white;
+}
+
+.column:nth-child(2) {
+    background-color: rgb(232, 232, 159); 
+    color: rgb(58, 192, 158);
+}
+
+.column:nth-child(3) {
+    background-color: rgb(232, 232, 159); 
+    color: rgb(58, 192, 158);
+}
+
+.column img {
+    display: inline-block; /* Ensure the image is treated as inline for centering */
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+}
+
+.slider {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.slider-square {
+    background-color: #007bff;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 100%; /* Move the box below the slider */
+    left: 0; /* Ensure it starts at the left edge */
+    transition: left 0.2s; /* Smooth transition */
+}
+
+
+.count-display {
+
+   
+    font-size: 6em; /* Increase the size of the number */
+    text-align: center;
+    margin: 100px 0; /* Adjust the top and bottom margin to push the number down */
+    line-height: 3.0;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+    color: rgb(58, 192, 158);
+}
+
+.mobile-view {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .column {
+        min-width: 100%; /* Make each column full-width on small screens */
+        max-width: 100%; /* Ensure no maximum width limit */
+    }
+    .mobile-view {
+        display: block;
+        text-align: center;
+        padding: 20px;
+    }
+}
+
+

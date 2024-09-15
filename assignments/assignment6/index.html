@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Three Column Layout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Assignment 7</h1>
+        <h2>Introduction to JavaScript</h2>
+    </header>
+    <div class="container">
+        <!-- Column 1 -->
+         <div class="column" id="countColumn">
+            <h2>Count</h2>
+            <div id="countDisplay" class="count-display">0</div>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="column">
+            <h2>Random Image</h2>
+            <img id="randomImage" src="https://picsum.photos/200" alt="Random Image">
+        </div>
+        <!-- Column 3 -->
+        <div class="column">
+            <h2>Slider Move</h2>
+            <div class="slider-container">
+                <!-- Slider at the top -->
+                <input type="range" min="0" max="100" value="0" class="slider" id="slider">
+                <!-- Box below the slider -->
+                <div class="slider-square" id="sliderSquare"></div>
+            </div>
+        </div>
+        
+    </div>
+    <footer>
+        <p>&copy;Vigneswaran</p>
+    </footer>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
