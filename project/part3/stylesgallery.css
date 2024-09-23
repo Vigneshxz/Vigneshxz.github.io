@@ -77,7 +77,7 @@ nav ul li a:hover {
 }
 
 .slides {
-    display: none;
+    display: none; /* Hide all slides initially */
 }
 
 .slides img {
@@ -85,6 +85,12 @@ nav ul li a:hover {
     height: 100%; /* Ensure images take the full size of the slideshow */
     object-fit: cover; /* Ensure images cover the container */
 }
+
+/* Show the first slide by default */
+.slides:first-child {
+    display: block; /* Show the first slide initially */
+}
+
 
 /* Add fade animation to slideshow images */
 @keyframes fade {
