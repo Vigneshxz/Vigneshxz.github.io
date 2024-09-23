@@ -1,5 +1,8 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Real Madrid Fan Club</title>
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -14,18 +17,25 @@
     <h1>REAL MADRID FAN CLUB</h1>
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="player.html">Player Profile</a></li>
-      <li><a href="schedule.html">Schedule</a></li>
-      <li><a href="comment.html">Comment</a></li>
-    </ul>
-  </nav>
-
   <main>
+    <!-- Hamburger menu icon, moved inside main -->
+    <div class="hamburger" id="hamburger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <nav id="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="player.html">Player Profile</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="comment.html">Comment</a></li>
+      </ul>
+    </nav>
+
     <section class="slideshow-container">
       <div class="slides">
         <img src="images/bernabeu.jpeg" alt="Real Madrid Slide 1">
@@ -38,5 +48,7 @@
       </div>
     </section>
   </main>
+
+  <script src="script.js"></script>
 </body>
 </html>

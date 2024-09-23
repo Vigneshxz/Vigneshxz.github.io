@@ -1,116 +1,158 @@
 /* Reusing main page CSS for the header and nav sections */
-
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background: url('your-background-image.jpg') no-repeat center center fixed;
-    background-size: cover;
-    color: black;
-    text-align: center;
-  }
-  
-  header {
-    position: relative;
-    padding: 20px;
-  }
-  
-  .logo {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-  }
-  
-  .sign-in {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-  }
-  
-  button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #000;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #fff;
-    color: #000;
-  }
-  
-  h1 {
-    font-size: 48px;
-    margin-top: 50px;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  nav ul li {
-    display: inline-block;
-    margin: 10px 20px;
-  }
-  
-  nav ul li a {
-    color: Black;
-    text-decoration: none;
-    font-size: 18px;
-  }
-  
-  nav ul li a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Specific styles for the about page */
-  
-  .about-container {
-    display: flex;
-    flex-wrap: wrap; /* Allow content to wrap */
-    justify-content: space-between;
-    align-items: flex-start;
-    margin: 50px auto;
-    max-width: 80%;
-    padding: 20px;
-  }
-  
-  .about-photo {
-    flex: 1;
-    margin-right: 20px;
-  }
-  
-  .about-photo img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
-  
-  .about-history {
-    flex: 2;
-    text-align: left;
-  }
-  
-  .about-history h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
-  }
-  
-  .about-history p {
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 20px; /* Adds space between paragraphs */
-  }
-  
-  .music-box {
-    text-align: center;
-    margin-top: 30px;
-  }
-  
-  .music-box h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: url('your-background-image.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: black;
+  text-align: center;
+}
+
+header {
+  position: relative;
+  padding: 20px;
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.sign-in {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+h1 {
+  font-size: 48px;
+  margin-top: 50px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  color: Black;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Hamburger menu */
+.hamburger {
+display: none; /* Hidden by default */
+cursor: pointer;
+position: absolute; /* Change to absolute positioning */
+right: 20px; /* Align to the right margin */
+top: 20px; /* Adjust this to place it next to the sign-in button */
+z-index: 10; /* Ensure it's above other elements */
+}
+
+.hamburger div {
+width: 30px;
+height: 3px;
+background-color: black;
+margin: 5px 0;
+transition: 0.4s;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+nav ul {
+  display: none; /* Hide menu by default */
+  flex-direction: column; /* Vertical alignment for small screens */
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+  padding: 0;
+  position: absolute;
+  top: 60px; /* Adjust if needed */
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+nav ul li {
+  display: block;
+  margin: 10px 0;
+}
+
+.hamburger {
+  display: block; /* Show hamburger icon on smaller screens */
+  right: 20px; /* Keep it on the right side */
+  top: 20px; /* Position next to the sign-in button */
+}
+}
+
+/* Specific styles for the about page */
+.about-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow content to wrap */
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 50px auto;
+  max-width: 80%;
+  padding: 20px;
+}
+
+.about-photo {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.about-photo img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.about-history {
+  flex: 2;
+  text-align: left;
+}
+
+.about-history h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.about-history p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px; /* Adds space between paragraphs */
+}
+
+.music-box {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.music-box h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
