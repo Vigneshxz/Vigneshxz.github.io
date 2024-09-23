@@ -13,11 +13,16 @@ header {
   padding: 20px;
 }
 
+
+
 .logo {
   position: absolute;
   top: 20px;
   left: 20px;
+  width: 50px; /* Adjust this value to make it smaller */
+  height: auto; /* Maintain aspect ratio */
 }
+
 
 .sign-in {
   position: absolute;
