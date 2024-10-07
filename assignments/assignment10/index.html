@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+    <title>Bird Classes</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Assignment 11</h1>
+    <h2>Classes</h2>
+
+    <div class="container">
+        <div class="bird-card" onclick="openModal(0)">
+            <h3>Hummingbird</h3>
+            <img src="images/Hummingbird.jpeg" alt="Hummingbird">
+        </div>
+        <div class="bird-card" onclick="openModal(1)">
+            <h3>Blue Jay</h3>
+            <img src="images/bluejay.jpeg" alt="Blue Jay">
+        </div>
+        <div class="bird-card" onclick="openModal(2)">
+            <h3>Cardinal</h3>
+            <img src="images/cardinal.jpeg" alt="Cardinal">
+        </div>
+        <div class="bird-card" onclick="openModal(3)">
+            <h3>Robin</h3>
+            <img src="images/robin.jpeg" alt="Robin">
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="birdModal" class="w3-modal">
+        <div class="w3-modal-content w3-animate-top w3-card-4 modal-style">
+            <header class="w3-container w3-teal">
+                <span onclick="closeModal()" class="w3-button w3-display-topright">&times;</span>
+                <h2 id="birdName"></h2>
+            </header>
+            <div class="w3-container modal-body">
+                <div class="modal-image">
+                    <img id="modalBirdImage" src="" alt="Bird Image">
+                </div>
+                <div class="modal-info">
+                    <p><strong>Size:</strong> <span id="birdSize"></span></p>
+                    <p><strong>Lifespan:</strong> <span id="birdLifespan"></span></p>
+                    <p><strong>Food:</strong> <span id="birdFood"></span></p>
+                    <p><strong>Habitat:</strong> <span id="birdHabitat"></span></p>
+                    <p><strong>Interesting Fact:</strong> <span id="birdFact"></span></p>
+                    <p id="birdDescription"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>@vigneswaran</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

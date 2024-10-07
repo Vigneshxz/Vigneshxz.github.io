@@ -1,54 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Real Madrid Fan Club</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Madrid Fan Club</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-  <header>
-    <div class="logo">
-      <img src="images/logod.png" alt="Real Madrid " style="width: 100px; height: auto;">
-    </div>
-    <div class="sign-in">
-      <button>Sign In</button>
-    </div>
-    <h1>REAL MADRID FAN CLUB</h1>
-  </header>
 
-  <main>
-    <!-- Hamburger menu icon, moved inside main -->
-    <div class="hamburger" id="hamburger">
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
+    <!-- Navigation Menu -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="profile.html">Player Profile</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="comments.html">Comments</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <nav id="main-nav">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="player.html">Player Profile</a></li>
-        <li><a href="schedule.html">Schedule</a></li>
-        <li><a href="comment.html">Comment</a></li>
-      </ul>
-    </nav>
-
-    <section class="slideshow-container">
-      <div class="slides">
-        <img src="images/bernabeu.jpeg" alt="Real Madrid Slide 1">
-      </div>
-      <div class="slides">
-        <img src="images/willyb.jpeg" alt="Real Madrid Slide 2">
-      </div>
-      <div class="slides">
-        <img src="images/willyb.jpeg" alt="Real Madrid Slide 3">
-      </div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="images/madridlogo.jpeg" alt="Real Madrid Stadium" class="hero-image">
+        <h1>Welcome to Real Madrid Fan Club</h1>
+        <p>Join the community of passionate Madridistas!</p>
     </section>
-  </main>
 
-  <script src="script.js"></script>
+    <!-- Fan Club Info -->
+    <section class="info">
+        <h2>Fan Clubs in USA</h2>
+        <p>Find and join official Real Madrid fan clubs near you.</p>
+        <div class="fan-club-list">
+            <a href="https://www.realmadrid.com/en-US/the-club/fan-clubs/united-states-of-americas-massachusetts-boston" class="fan-club-box">
+                <img src="images/boston.jpeg" alt="Boston" class="fan-club-image">
+                <span>Boston</span>
+            </a>
+            <a href="https://www.realmadrid.com/en-US/the-club/fan-clubs/united-states-of-americas-california-los-angeles" class="fan-club-box">
+                <img src="images/LA.jpeg" alt="Los Angeles" class="fan-club-image">
+                <span>Los Angeles</span>
+            </a>
+            <a href="https://www.realmadrid.com/en-US/the-club/fan-clubs/united-states-of-americas--pena-madridista-washington-dc" class="fan-club-box">
+                <img src="images/DC.jpeg" alt="Washington DC" class="fan-club-image">
+                <span>Peña Madridista Washington DC</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Latest News -->
+    <section class="news">
+        <h2>Latest News</h2>
+        <div class="news-cards">
+            <!-- News Articles -->
+            <div class="news-card">
+                <h3>Real Madrid wins again!</h3>
+                <p>The latest victory from the team. Read more...</p>
+            </div>
+            <!-- More news cards -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Real Madrid Fan Club</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

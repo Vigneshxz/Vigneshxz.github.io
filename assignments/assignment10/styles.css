@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #708090;
+    margin-top: 30px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #d2691e;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.bird-card {
+    background-color: #add8e6;
+    padding: 15px;
+    border-radius: 10px;
+    width: 22%;
+    height: 400px; /* Increased height */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.bird-card:hover {
+    transform: scale(1.05);
+}
+
+.bird-card img {
+    width: 100%;
+    height: 75%; /* Adjust image height to fit new card size */
+    border-radius: 10px;
+}
+
+/* Modal box styling adjustments */
+.modal-style {
+    width: 90%; /* Increased modal width to 90% */
+    max-width: 1200px; /* Increased max width to 1200px */
+    height: 80%; /* Added height for larger vertical size */
+    max-height: 800px; /* Limit the maximum height */
+}
+
+/* Adjust the image inside the modal */
+.modal-image img {
+    width: 100%;
+    max-width: 250px; /* Increased image size inside modal */
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Adjust modal content layout */
+.modal-body {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px; /* More padding for spacing */
+}
+
+.modal-info {
+    margin-left: 50px; /* Adjusted margin for balance */
+}
+
+.modal-info p {
+    text-align: left;
+    margin: 10px 0;
+    font-size: 1.2rem; /* Slightly increased font size */
+}
+
+.modal-info #birdDescription {
+    margin-top: 20px;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Footer styling */
+footer {
+    background-color: #f4f4f4;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .bird-card {
+        width: 90%; 
+        margin-bottom: 20px; 
+    }
+
+    h1 {
+        font-size: 2rem; 
+    }
+
+    h2 {
+        font-size: 1.5rem; 
+    }
+
+    .modal-style {
+        height: auto;
+        max-height: 90%; 
+    }
+
+    .modal-body {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .modal-info {
+        margin-left: 0; 
+        text-align: center; 
+    }
+
+    .modal-info p {
+        font-size: 1rem; 
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem; 
+    }
+
+    h2 {
+        font-size: 1.2rem; 
+    }
+
+    footer p {
+        font-size: 0.9rem; 
+    }
+}

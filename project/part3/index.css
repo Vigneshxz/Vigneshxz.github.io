@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('images/index.jpeg') no-repeat center center fixed; /* Set the background image */
+    background-size: cover; /* Ensures the background image covers the whole page */
+    color: #0a0742;
+}
+
+header {
+    background-color: #0a0742;
+    color: white;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.hero {
+    position: relative;
+    height: 400px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    overflow: hidden;
+    padding: 0; /* Remove any padding */
+    margin: 0;  /* Ensure no margin around the section */
+    z-index: 1; /* Ensure the hero section is above the background */
+}
+
+.hero img.hero-image {
+    position: absolute;
+    width: 100%;      /* Ensures the image fills the container */
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 1;
+    left: 0;          /* Makes sure the image aligns fully to the left */
+    margin: 0;        /* Removes any margin on the image */
+    padding: 0;       /* Removes any padding */
+}
+
+.hero h1, .hero p {
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 24px;
+}
+
+.info, .news {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* White background with 90% opacity */
+    border-radius: 8px;
+    max-width: 1200px;
+    margin: 20px auto;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.info h2, .news h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.fan-club-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.fan-club-box {
+    background-color: white;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fan-club-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+.fan-club-image {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.news-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.news-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+footer {
+    background-color: #0a0742;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}

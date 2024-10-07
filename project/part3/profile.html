@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Profile - Real Madrid Fan Club</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+
+    <!-- Navigation Menu -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="profile.html">Player Profile</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="comments.html">Comments</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <section class="content">
+        <h1>Player Profile</h1>
+
+        <!-- Goalkeepers -->
+        <h2>Goalkeepers</h2>
+        <div class="player-section">
+
+            <div class="player-box" onclick="showcourtois()">
+                <img src="players/Thibaut-Courtois.jpeg" alt="Thibaut Courtois">
+                <p>Thibaut Courtois</p>
+            </div>
+
+            <div class="player-box" onclick="showlunin()">
+                <img src="players/lunin.jpeg" alt="Andriy Lunin">
+                <p>Andriy Lunin</p>
+            </div>
+        </div>
+
+        <!-- Defenders -->
+        <h2>Defenders</h2>
+        <div class="player-section">
+
+            <div class="player-box" onclick="showcarvaja()">
+                <img src="players/danicarv.jpeg" alt="Carvajal">
+                <p>Carvajal</p>
+            </div>
+
+            <div class="player-box" onclick="showmilitao()">
+                <img src="players/militao.jpeg" alt="Éder Militão">
+                <p>Éder Militão</p>
+            </div>
+
+            <div class="player-box" onclick="showalaba()">
+                <img src="players/alaba.jpeg" alt="David Alaba">
+                <p>David Alaba</p>
+            </div>
+
+            <div class="player-box" onclick="showVazquez()">
+                <img src="players/lucas.jpeg" alt="Lucas Vázquez">
+                <p>Lucas Vázquez</p>
+            </div>
+
+            <div class="player-box" onclick="showVallejo()">
+                <img src="players/vallejo.jpeg" alt="Vallejo">
+                <p>Vallejo</p>
+            </div>
+            <div class="player-box" onclick="showfrangarcia()">
+                <img src="players/fran.jpeg" alt="Fran García">
+                <p>Fran García</p>
+            </div>
+
+            <div class="player-box" onclick="showrüdiger()">
+                <img src="players/rudiger.jpeg" alt="Rüdiger">
+                <p>Rüdiger</p>
+            </div>
+
+            <div class="player-box" onclick="showmendy()">
+                <img src="players/mendy.jpeg" alt="Mendy">
+                <p>Mendy</p>
+            </div>
+        </div>
+
+        <!-- Midfielders -->
+        <h2>Midfielders</h2>
+        <div class="player-section">
+            <div class="player-box" onclick="showbellingham()">
+                <img src="players/jude.jpeg" alt="Jude Bellingham">
+                <p>Jude Bellingham</p>
+            </div>
+
+            <div class="player-box" onclick="showcamavinga()">
+                <img src="players/cama.jpeg" alt="Camavinga">
+                <p>Camavinga</p>
+            </div>
+
+            <div class="player-box" onclick="showvalverde()">
+                <img src="players/valverde.jpeg" alt="Valverde">
+                <p>Valverde</p>
+            </div>
+
+            <div class="player-box" onclick="showmodric()">
+                <img src="players/modric.jpeg" alt="Luka Modric">
+                <p>Luka Modric</p>
+            </div>
+
+            <div class="player-box" onclick="showtchouameni()">
+                <img src="players/tchoua.jpeg" alt="Tchouaméni">
+                <p>Tchouaméni</p>
+            </div>
+
+            <div class="player-box" onclick="showguler()">
+                <img src="players/guler.jpeg" alt="Arda Güler">
+                <p>Arda Güler</p>
+            </div>
+
+            <div class="player-box" onclick="showceballos()">
+                <img src="players/ceballos.jpeg" alt="Dani Ceballos">
+                <p>Dani Ceballos</p>
+            </div>
+        </div>
+
+        <!-- Forwards -->
+        <h2>Forwards</h2>
+        <div class="player-section">
+            <div class="player-box" onclick="showvini()">
+                <img src="players/vini.jpeg" alt="Vinicius Junior">
+                <p>Vinicius Junior</p>
+            </div>
+            <div class="player-box" onclick="showmbappe()">
+                <img src="players/mbappe.jpeg" alt="Kylian Mbapp">
+                <p>Kylian Mbapp</p>
+            </div>
+
+            <div class="player-box" onclick="showrodrygo()">
+                <img src="players/rodrigo.jpeg" alt="Rodrygo">
+                <p>Rodrygo</p>
+            </div>
+
+            <div class="player-box" onclick="showendrick()">
+                <img src="players/endrick.jpeg" alt="Endrick">
+                <p>Endrick</p>
+            </div>
+
+            <div class="player-box" onclick="showbrahim()">
+                <img src="players/diaz.jpeg" alt="Brahim Díaz">
+                <p>Brahim Díaz</p>
+            </div>
+
+        </div>
+
+        <!-- Coaches -->
+        <h2>Coaches</h2>
+        <div class="player-section">
+            <div class="player-box" onclick="showcarlo()">
+                <img src="players/carlo.jpeg" alt="Carlo Ancelotti">
+                <p>Carlo Ancelotti</p>
+            </div>
+            <div class="player-box" onclick="showDavide()">
+                <img src="players/davide.jpeg" alt="Davide Ancelotti">
+                <p>Davide Ancelotti</p>
+            </div>
+            <!-- more coaches -->
+        </div>
+
+        <!-- Popup for Player Stats -->
+        <div class="popup" id="popup">
+            <div class="popup-content">
+                <h2 id="popup-title"></h2>
+                <p id="popup-stats"></p>
+                <button class="close-btn" onclick="closePopup()">Close</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Real Madrid Fan Club</p>
+    </footer>
+
+    <script src="profile.js"></script>
+</body>
+</html>
