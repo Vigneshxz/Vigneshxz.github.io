@@ -5,7 +5,7 @@ const showPopup = (title, stats) => {
 };
 
 
-// Updated stats string for Cristiano Ronaldo
+// Updated stats 
 const showcourtois = () => {
     showPopup(
         'Thibaut Courtois',

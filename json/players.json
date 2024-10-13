@@ -1,0 +1,70 @@
+[
+    {
+        "_id": 1,
+        "name": "Thibaut Courtois",
+        "position": "Goalkeeper",
+        "nationality": "Belgium",
+        "img_name": "images/courtois.jpg"
+    },
+    {
+        "_id": 2,
+        "name": "Dani Carvajal",
+        "position": "Defender",
+        "nationality": "Spain",
+        "img_name": "images/carvajal.jpg"
+    },
+    {
+        "_id": 3,
+        "name": "Antonio Rüdiger",
+        "position": "Defender",
+        "nationality": "Germany",
+        "img_name": "images/rudiger.jpg"
+    },
+    {
+        "_id": 4,
+        "name": "David Alaba",
+        "position": "Defender",
+        "nationality": "Austria",
+        "img_name": "images/alaba.jpg"
+    },
+    {
+        "_id": 5,
+        "name": "Eduardo Camavinga",
+        "position": "Midfielder",
+        "nationality": "France",
+        "img_name": "images/camavinga.jpg"
+    },
+    {
+        "_id": 6,
+        "name": "Luka Modrić",
+        "position": "Midfielder",
+        "nationality": "Croatia",
+        "img_name": "images/modric.jpg"
+    },
+    {
+        "_id": 7,
+        "name": "Vinícius Júnior",
+        "position": "Forward",
+        "nationality": "Brazil",
+        "img_name": "images/vinicius.jpg"
+    },
+    {
+        "_id": 8,
+        "name": "Joselu",
+        "position": "Forward",
+        "nationality": "Spain",
+        "img_name": "images/joselu.jpg"
+    }
+]
+
+
+
+
+
+
+
+
+
+
+
+
