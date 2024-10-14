@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the body takes at least the full height of the viewport */
+    font-family: Arial, sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/schedulebg.jpeg') no-repeat center center fixed;
+    background-size: cover; /* Ensures background image covers the whole page */
+    color: #0a0742;
+}
+
+header {
+    background-color: #0a0742;
+    color: white;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.content {
+    flex: 1; /* Allows the content area to grow and push the footer to the bottom */
+    padding: 50px 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* White background with 90% opacity */
+    border-radius: 8px;
+    color: #0a0742;
+    max-width: 1200px;
+    margin: 20px auto;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #0a0742;
+}
+
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.schedule-table th, .schedule-table td {
+    border: 1px solid #0a0742;
+    padding: 10px;
+    text-align: center;
+}
+
+.schedule-table th {
+    background-color: #0a0742;
+    color: white;
+}
+
+.coming-soon {
+    margin-top: 20px; /* Space between the table and the coming soon message */
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #0a0742;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}

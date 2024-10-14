@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comments - Real Madrid Fan Club</title>
+    <link rel="stylesheet" href="comments.css">
+</head>
+<body>
+
+    <!-- Navigation Menu -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="profile.html">Player Profile</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="comments.html">Comments</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <section class="content">
+        <h1>Comments</h1>
+        <p>We value your feedback! Share Your Thoughts</p>
+
+        <form class="comment-form" id="comment-form">
+            <textarea rows="5" id="comment-input" placeholder="Write your comment here..." required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        
+        <div class="comments-list" id="comments-list">
+            <h2>User Comments:</h2>
+            <ul id="comments-ul"></ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Real Madrid Fan Club</p>
+    </footer>
+
+    <script src="comments.js"></script>
+</body>
+</html>
