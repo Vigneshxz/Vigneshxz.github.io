@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Profile - Real Madrid Fan Club</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+
+    <!-- Navigation Menu -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="profile.html">Player Profile</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="comments.html">Comments</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <section class="content">
+        <h1>Player Profile</h1>
+
+        <!-- Goalkeepers -->
+        <h2>Goalkeepers</h2>
+        <div class="player-section">
+
+            <div class="player-box" onclick="showcourtois()">
+              <img src="players/Thibaut-Courtois.jpeg" alt="Thibaut Courtois">
+                <p>Thibaut Courtois</p>
+            </div>
+        </div>
+        <!-- Defenders -->
+        <h2>Defenders</h2>
+        <div class="player-section">
+
+            <div class="player-box" onclick="showcarvajal()">
+              <img src="players/danicarv.jpeg" alt="Dani Carvajal">
+                <p>Dani Carvajal</p>
+            </div>
+
+            <div class="player-box" onclick="showrüdiger()">
+              <img src="players/rudiger.jpeg" alt="Antonio Rüdiger">
+              <p>Antonio Rüdiger</p>
+          </div>
+
+            <div class="player-box" onclick="showalaba()">
+              <img src="players/alaba.jpeg" alt="David Alaba">
+              <p>David Alaba</p>
+          </div>
+        </div>
+
+        <!-- Midfielders -->
+        <h2>Midfielders</h2>
+        <div class="player-section">
+          <div class="player-box" onclick="showcamavinga()">
+            <img src="players/cama.jpeg" alt="Eduardo Camavinga">
+            <p>Eduardo Camavinga</p>
+          </div>
+
+
+          <div class="player-box" onclick="showmodric()">
+            <img src="players/modric.jpeg" alt="Luka Modrić">
+            <p>Luka Modrić</p>
+          </div>
+        </div>
+
+        <!-- Forwards -->
+        <h2>Forwards</h2>
+        <div class="player-section">
+            <div class="player-box" onclick="showvini()">
+                <img src="players/vini.jpeg" alt="VVinícius Júnior">
+                <p>Vinícius Júnior</p>
+            </div>
+
+            <div class="player-box" onclick="showbrahim()">
+              <img src="players/diaz.jpeg" alt="Diaz">
+              <p>Diaz</p>
+          </div>
+        </div>
+
+        <!-- Popup for Player Stats -->
+        <div class="popup" id="popup">
+          <div class="popup-content">
+              <h2 id="popup-title"></h2>
+              <p id="popup-stats"></p>
+              <button class="close-btn" onclick="closePopup()">Close</button>
+          </div>
+      </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Real Madrid Fan Club</p>
+  </footer>
+
+  <script src="profile.js"></script>
+</body>
+</html>
+
+

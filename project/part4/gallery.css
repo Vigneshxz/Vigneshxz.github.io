@@ -45,8 +45,9 @@ nav ul li a {
     background-color: rgba(255, 255, 255, 0.8); /* White background with 90% opacity */
     border-radius: 8px;
     color: #0a0742;
-    max-width: 1200px;
-    margin: auto; /* Center the content */
+    max-width: 1200px; /* Make the white box larger */
+    width: 90%; /* Ensure the white box takes up most of the page width */
+    margin: 20px auto; /* Center the content with some space above and below */
     flex: 1; /* Allow content to grow */
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
 }
@@ -57,52 +58,20 @@ nav ul li a {
     color: #0a0742;
 }
 
-.slideshow-container {
-    position: relative; /* To position the navigation arrows */
-    width: 800px; /* Set a fixed width for the slideshow */
-    height: 500px; /* Set a fixed height for the slideshow */
-    margin: auto; /* Center the slideshow */
-    overflow: hidden; /* Hide overflowing parts */
-}
-
-.slide {
-    display: none; /* Hide all slides by default */
+.video-container {
+    display: flex;
+    justify-content: center; /* Center the video */
+    align-items: center;
+    height: 600px; /* Increase height of video container */
     width: 100%; /* Full width */
-    height: 100%; /* Full height */
+    max-width: 100%; /* Ensure the video container stretches the full width */
+    margin: auto;
 }
 
-.gallery-image {
-    width: 100%; /* Ensure images take full width */
-    height: 100%; /* Ensure images take full height */
-    object-fit: cover; /* Maintain aspect ratio and cover the box */
-}
-
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none; /* Prevent text selection */
-}
-
-.prev {
-    left: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-.prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8); /* Change background on hover */
+iframe {
+    width: 100%; /* Ensure iframe takes full width of the container */
+    height: 100%; /* Ensure iframe takes full height of the container */
+    border: none; /* Remove any default border */
 }
 
 footer {
@@ -111,4 +80,3 @@ footer {
     text-align: center;
     padding: 20px;
 }
-
